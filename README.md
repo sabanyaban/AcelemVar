@@ -20,6 +20,8 @@ AcelemVar, web sayfalarındaki metinleri RSVP (Rapid Serial Visual Presentation)
    - Hız ayarı ile okuma hızını değiştirin
    - İlerleme çubuğu ile metinde gezinin
    - "◀ 10" butonu ile 10 kelime geri gidin
+![resim](https://github.com/user-attachments/assets/6c58265d-74eb-427e-953c-9019e2a766c4)
+
 
 ### Klavye Kısayolları
 
@@ -28,7 +30,7 @@ AcelemVar, web sayfalarındaki metinleri RSVP (Rapid Serial Visual Presentation)
 
 ## Kurulum
 
-Firefox'ta about:debugging sayfasına giderek geçici eklenti yükleme adımlarından manifest.json dosyası ile kurulum yapabilirsiniz.
+Firefox'ta about:debugging#/runtime/this-firefox adresine giderek "Geçici Eklenti Yükle" butonuyla buradan indirdiğiniz dosyaların içinden "manifest.json" dosyasını seçerek eklentiyi kullanabilirsiniz. 
 
 ## Lisans
 
