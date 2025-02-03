@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="sentence-display"></div>
+      
+      <div class="word-display">
+        <div class="word-container">
+          <span class="word-prefix"></span>
+          <span class="word-focus"></span>
+          <span class="word-suffix"></span>
+        </div>
+      </div>
+      
+      <div class="progress-container">
+        <button id="startButton">▶</button>
+        <button id="back10">⟲</button>
+        <input type="range" id="progress" value="0" min="0" max="0">
+        <span id="progress-label">0/0</span>
+      </div>
+      
+      <button id="getTextButton" style="display: none">Metni Al</button>
+    </div>
+
+    <div class="right-container">
+      <div class="speed-container">
+        <input type="range" id="speed" value="400" min="60" max="600" orient="vertical">
+        <span id="speed-label">400<br>w/m</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="shortcuts">
+    Space: Play/Pause, ←: 10 Words Back, ↓: Sentence Start
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 

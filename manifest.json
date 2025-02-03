@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "AcelemVar",
+  "version": "1.0.0",
+  "description": "Seçili Metni Hızlı Okumaya Yarar. Metni seçip sağ tıklayarak veya eklenti simgesine tıklayarak hızlı okuma modunu başlatabilirsiniz.",
+  "author": "Şaban Yaban",
+  "permissions": [
+    "activeTab",
+    "clipboardRead",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_scripts/content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  }
+} 

@@ -1,0 +1,181 @@
+body {
+  width: 440px;
+  height: 200px;
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-color: #373737;
+  color: #bfbfbf;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100% - 20px);
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;  /* Flex shrink için gerekli */
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+}
+
+.sentence-display {
+  height: 60px;
+  overflow-y: auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #bfbfbf;
+  padding: 10px;
+}
+
+.word-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 36px;
+  width: 100%;
+  position: relative;
+}
+
+.word-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  letter-spacing: -1px;
+}
+
+.word-focus {
+  color: #ff0000;
+  text-align: center;
+  flex: 0 0 auto;  /* flex-grow: 0, flex-shrink: 0 */
+  padding: 0;
+  margin: 0;
+  white-space: pre;
+}
+
+.word-prefix {
+  color: #c1c1c1;
+  text-align: right;
+  flex: 1;  /* Kalan alanı paylaş */
+  padding: 0;
+  margin: 0;
+  white-space: pre;
+}
+
+.word-suffix {
+  color: #c1c1c1;
+  text-align: left;
+  flex: 1;  /* Kalan alanı paylaş */
+  padding: 0;
+  margin: 0;
+  white-space: pre;
+}
+
+/* Scroll bar stilini özelleştir */
+.sentence-display::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sentence-display::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.sentence-display::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.sentence-display::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Diğer elementlerin boyutlarını ayarla */
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.progress-container input[type="range"] {
+  flex-grow: 1;
+}
+
+.progress-container button {
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startButton, #back10 {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.speed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 0px;
+}
+
+.speed-container input[type="range"] {
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+  appearance: slider-vertical;
+  width: 20px;
+  height: 100px;
+}
+
+#speed-label {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.shortcuts {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  font-size: 9px;
+  color: #666;
+  text-align: center;
+  padding: 0 20px;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: #424242;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+/* ... diğer stiller ... */ 
