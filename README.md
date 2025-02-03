@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# AcelemVar
-=======
 # AcelemVar - Hızlı Okuma Eklentisi
 
 AcelemVar, web sayfalarındaki metinleri RSVP (Rapid Serial Visual Presentation) tekniği ile hızlı okumanızı sağlayan bir Firefox eklentisidir.
@@ -40,4 +37,3 @@ MIT License
 ## Geliştirici
 
 Şaban Yaban
->>>>>>> 1233db6 (First)
