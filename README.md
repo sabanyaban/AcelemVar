@@ -28,7 +28,7 @@ AcelemVar, web sayfalarındaki metinleri RSVP (Rapid Serial Visual Presentation)
 
 ## Kurulum
 
-Firefox Add-ons sayfasından "AcelemVar" eklentisini kurabilirsiniz.
+Firefox'ta about:debugging sayfasına giderek geçici eklenti yükleme adımlarından manifest.json dosyası ile kurulum yapabilirsiniz.
 
 ## Lisans
 
